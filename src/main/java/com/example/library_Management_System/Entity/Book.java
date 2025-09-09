@@ -8,13 +8,13 @@ import jakarta.persistence.Id;
 @Entity
 public class Book {
 
-  @Id
-  @GeneratedValue(strategy=GenerationType.AUTO)
-  private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
-  private String title;
+    private String title;
 
-  private String author;
+    private String author;
 
     public Long getId() {
         return id;
@@ -40,10 +40,10 @@ public class Book {
         this.author = author;
     }
 
-
- 
+    public Book(Long id, String title, String author) {
+        this.id = id;
+        this.title = title;
+        this.author = author;
     }
 
-
-  
-
+}
