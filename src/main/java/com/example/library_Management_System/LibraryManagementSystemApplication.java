@@ -114,6 +114,9 @@ public class LibraryManagementSystemApplication {
 		Iterable<User> allUsers = userRepository.findAll();
 		allUsers.forEach(u -> System.out.println(u));
 
+		userRepository.count();
+		userRepository.deleteAll(allUsers);
+
 	}
 
 }
