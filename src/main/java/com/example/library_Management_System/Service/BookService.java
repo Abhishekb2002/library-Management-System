@@ -3,9 +3,17 @@ package com.example.library_Management_System.Service;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.library_Management_System.Entity.Book;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import com.example.library_Management_System.Entity.Book;
+import com.example.library_Management_System.Repository.BookRepo;
+
+@Service
 public class BookService {
+
+  @Autowired
+  private BookRepo bookRepo;
 
   private static List<Book> list = new ArrayList<>();
 
