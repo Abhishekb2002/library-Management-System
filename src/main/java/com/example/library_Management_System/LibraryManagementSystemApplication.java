@@ -39,7 +39,7 @@ public class LibraryManagementSystemApplication {
 		System.out.println(savedUser);
 
 		User user2 = new User();
-		user2.setName("John WIck");
+		user2.setName("John Wick");
 		user2.setCity("Pune");
 		user2.setEmail("nitinlatapate@gmail.com");
 		user2.setStatus("python programing");
