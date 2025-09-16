@@ -18,9 +18,9 @@ public class BookService {
   private static List<Book> list = new ArrayList<>();
 
   static {
-    list.add(new Book(1L, "pytho", "Nitin L"));
+    list.add(new Book(1L, "python", "Nitin L"));
     list.add(new Book(2L, "c++", "Abhishek R B"));
-    list.add(new Book(3L, "MArathi", "Ganesh A"));
+    list.add(new Book(3L, "Marathi", "Ganesh A"));
   }
 
   // get all books
